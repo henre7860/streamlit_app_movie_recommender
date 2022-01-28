@@ -96,7 +96,7 @@ def content_model(movie_list, top_n):
     movie_index_3 =  new_df[new_df.title == movie_list[2]].index[0]
 
     # Limit sample to 10 % for initial app to run    
-    df_1 = new_df.sample(frac = 0.01)
+    df_1 = new_df.sample(frac = 0.25)
     df_2 = new_df.iloc[[movie_index_1,movie_index_2,movie_index_3]]
     df_2 = df_2.append(df_1)
         
