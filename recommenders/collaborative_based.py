@@ -48,7 +48,8 @@ ratings_3 = pd.read_csv('resources/data/ratings_3.csv')
 ratings_4 = pd.read_csv('resources/data/ratings_4.csv')
 
 ratings_df = ratings_1.append(ratings_2).append(ratings_3).append(ratings_4)
-
+# Limit the dataset to 10 000 rows for initial app
+ratings_df = ratings_df.sample(n = 10000)
 #ratings_df = pd.read_csv('resources/data/ratings.csv')
 ratings_df.drop(['timestamp'], axis=1,inplace=True)
 
