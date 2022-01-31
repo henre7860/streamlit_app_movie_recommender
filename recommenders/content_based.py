@@ -120,7 +120,7 @@ def content_model(movie_list, top_n):
         
     recommended_movies = []
         
-    top_n = 10
+    #top_n = 10
     for i in indexes:
             
         if df_2.iloc[i].title not in movie_list and len(recommended_movies) < top_n:
