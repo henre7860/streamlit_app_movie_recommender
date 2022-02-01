@@ -140,7 +140,7 @@ def collab_model(movie_list,top_n=10):
 
     """
 
-    top_n=10
+    
     new_df = movies_df.copy()
     new_df.set_index('movieId',inplace=True)
     
