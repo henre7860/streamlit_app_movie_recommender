@@ -106,8 +106,7 @@ def main():
                         top_recommendations = content_model(movie_list=fav_movies,top_n=10)
                     st.title("We think you'll like:")
                     for i,j in enumerate(top_recommendations):
-                        for i in top_recommendations:
-                            st.subheader(i)
+                        st.subheader(str(i+1)+'. '+j)
                 except:
                     st.error("Oops! Looks like this algorithm does't work.\
                               We'll need to fix it!")
